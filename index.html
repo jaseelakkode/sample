@@ -14,6 +14,10 @@
 
 <body>
     <div class="container">
+          <div id="loading">
+        <div id="loading-container">
+            <div id="loading-text">Sending...</div>
+        </div></div>
     <div class="head">
         <h1>Unleash Your Thoughts:</h1>
         <p>Write About </p></div>
@@ -68,16 +72,19 @@
 <script>
         $("#submit-form").submit((e)=>{
             e.preventDefault()
+            $("#loading").show();
             $.ajax({
                 url:"https://script.google.com/macros/s/AKfycbzmGvjiLwzmjMvs5ccXUJBB9B9ciie6UxcPrxn-wsONPge2dEwEqjcwa-BoJzH15k5Y/exec",
                 data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (response){
+                    $("#loading").hide();
                     alert("Form submitted successfully")
                     window.location.reload()
                     //window.location.href="https://google.com"
                 },
                 error:function (err){
+                    $("#loading").hide();
                     alert("Something Error")
     
                 }
