@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+body{
+   
+    background-color: navy;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    width: 550px;
+    max-width: 90vw;
+    padding-top: 10px;
+    
+
+   
+}
+form{
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+   
+}
+.head p,.head h1{
+    text-align: center ; 
+    margin: 0;
+
+}
+.head{
+
+    padding: 20px 10px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+}
+.head h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+}
+ .box {
+    width: 100%;
+    box-shadow: 0 12 3;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.box img{
+    width: 80px;
+    border-radius: 50px;
+}
+.form-element{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.box .name{
+    padding-left: 10px;
+}
+.box .name h1,p{
+    margin: 0;
+    text-align: left;
+}
+.box .name h1{
+    font-size: 20px;
+}
+input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    border-radius: 3px;
+    padding: 9px;
+    background-color: #d3d3d32b;
+}
+textarea{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    border-radius: 3px;
+    padding: 9px;
+    background-color: #d3d3d32b;
+    
+}
+button{
+    width: 100%;
+    background-color: dodgerblue;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+span{
+    margin-bottom: 8px;
+}
